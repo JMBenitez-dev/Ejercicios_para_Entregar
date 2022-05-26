@@ -13,8 +13,9 @@ for (let index: number = 0; index < 6; index++) {
   );
 
   let suma: number = ArregloOne[index] + ArregloTwo[index]; //en cada vuelta, suma el valor de los dos vectores
+  // No se recomienda declarar variables dentro de un for.
 
-  resultado = suma; //guarda el resultado de la suma.
+  resultado = suma; //guarda el resultado de la suma.//porque no haces ArregloSuma[index] =suma; y te ahorras la var resultado?
   ArregloSuma[index] = resultado;
 }
 for (index = 0; index < 6; index++) {
@@ -25,3 +26,4 @@ for (index = 0; index < 6; index++) {
     ArregloSuma[index]
   }`);
 }
+//esta correcta tu solucion
